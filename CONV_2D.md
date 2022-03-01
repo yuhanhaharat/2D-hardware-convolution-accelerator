@@ -12,7 +12,7 @@ The computation took in place inside of the PE core is shown as below, as can be
 PE core is used and can stream input image in a parallel manner. Each PE core equips with a FIFO. 
 A input FIFO and a final output FIFO is used for data  buffering before written back to the memory.
 
-![img.png](img.png)
+![img.png](images/img.png)
 
 Also, memory write and read burst modes are implemented to further speed up in hardware. Burst length 
 is chosen to be weight matrix size or feature map size. In simple words, once read or write address
@@ -21,9 +21,9 @@ is assert, a chuck of data is read out from memory in the following cycle and bu
 Below is a diagram showing my design with all signals and FSM for both memory interface 
 and computation unit
 
-![img_2.png](img_2.png)
+![img_2.png](images/img_2.png)
 
-![img_3.png](img_3.png)
+![img_3.png](images/img_3.png)
 
 
 
